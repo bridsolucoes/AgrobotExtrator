@@ -1,13 +1,18 @@
 // Aplicações base
-const puppeteer = require('puppeteer-extra');
-const AdblockerPlugin = require('puppeteer-extra-plugin-adblocker');
-const cron = require('node-cron');
+const puppeteer 		= require('puppeteer-extra');
+const AdblockerPlugin 	= require('puppeteer-extra-plugin-adblocker');
+const cron 				= require('node-cron');
+const fs 				= require('fs');
 
 puppeteer.use(AdblockerPlugin());
 
-var dev = true;
+let devjson = fs.readFileSync('dev.json');
+
+var dev = JSON.parse(devjson.toString()).dev;
 
 if(dev){
+
+	console.log("dev aqui");
 
 	//////////////////////////////////////////////////////////////////////////////////
 	//////////////////////////////////////////////////////////////////////////////////
@@ -72,6 +77,9 @@ if(dev){
 
 
 }else{
+
+	console.log("Produção");
+
 	cron.schedule('0 0 7 * * 1,2,3,4,5', () => {
 
 		// console.log("HMMMMMM");
