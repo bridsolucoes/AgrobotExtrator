@@ -80,7 +80,7 @@ if(dev){
 
 	console.log("Produção");
 
-	cron.schedule('0 0 7 * * 1,2,3,4,5', () => {
+	cron.schedule('0 0 * * * *', () => {
 
 		// console.log("HMMMMMM");
 	  
