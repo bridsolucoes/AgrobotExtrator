@@ -88,7 +88,7 @@ if(dev){
 
 	console.log("============= Produção =============");
 
-	cron.schedule('0 0 * * * *', () => {
+	cron.schedule('0 30 * * * *', () => {
 
 		gerarImagens();
 
