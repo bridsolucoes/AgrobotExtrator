@@ -23,6 +23,17 @@ if(dev){
 
 		var folder = "./images/"
 
+		/// Dólar
+		await page.goto('https://www.canalrural.com.br/cotacao/mercado_financeiro/', {waitUntil: 'networkidle2'});
+		await page.setViewport({width: 800, height: 630});
+		await page.$eval('div.algodao > div > div:nth-child(3) > h3', (el) => el.scrollIntoView());
+		await page.screenshot({
+			path: folder + '00 - dolar.jpg',
+			type: 'jpeg',
+			quality: 70
+		});
+		/// Fim Dólar
+
 		/// Milho
 		await page.goto('https://www.canalrural.com.br/cotacao/milho/', {waitUntil: 'networkidle2'});
 		await page.setViewport({width: 800, height: 510});
