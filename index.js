@@ -15,6 +15,11 @@ function gerarImagens(){
 	puppeteer.launch({ headless: true }).then(async browser => {
 		const page = await browser.newPage();
 
+		await page.setExtraHTTPHeaders({
+			"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36",
+			"accept-language": "en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7"
+		});
+
 		var folder = "./images/"
 
 		/// Dólar
