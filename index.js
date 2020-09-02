@@ -24,8 +24,8 @@ function gerarImagens(){
 
 		/// Dólar
 		await page.goto('https://www.canalrural.com.br/cotacao/mercado_financeiro/', {waitUntil: 'networkidle2'});
-		await page.evaluate(() => document.getElementById("abas").remove());
-		var el = await page.$('.algodao');
+		// await page.evaluate(() => document.querySelector("").remove());
+		var el = await page.$('body > div.pp-offcanvas-container > div.fl-page > div.fl-page-content > div.fl-builder-content.fl-builder-content-2743787.fl-builder-global-templates-locked > div.fl-row.fl-row-fixed-width.fl-row-bg-none.fl-node-5e7d8e6f9bc02 > div > div.fl-row-content.fl-row-fixed-width.fl-node-content > div > div > div > div > div > div > div.algodao');
 		await el.screenshot({
 		    path: folder + '00 - mercado financeiro.jpg',
 		    type: 'jpeg',
@@ -35,8 +35,8 @@ function gerarImagens(){
 
 		/// Milho
 		await page.goto('https://www.canalrural.com.br/cotacao/milho/', {waitUntil: 'networkidle2'});
-		await page.evaluate(() => document.getElementById("abas").remove());
-		var el = await page.$('.milho');
+		// await page.evaluate(() => document.querySelector("").remove());
+		var el = await page.$('body > div.pp-offcanvas-container > div.fl-page > div.fl-page-content > div.fl-builder-content.fl-builder-content-2743787.fl-builder-global-templates-locked > div.fl-row.fl-row-fixed-width.fl-row-bg-none.fl-node-5e7d8e6f9bc02 > div > div.fl-row-content.fl-row-fixed-width.fl-node-content > div > div > div > div > div > div > div.milho');
 		await el.screenshot({
 		    path: folder + '01 - milho.jpg',
 		    type: 'jpeg',
@@ -46,8 +46,8 @@ function gerarImagens(){
 
 		/// Soja
 		await page.goto('https://www.canalrural.com.br/cotacao/soja/', {waitUntil: 'networkidle2'});
-		await page.evaluate(() => document.getElementById("abas").remove());
-		var el = await page.$('.trigo');
+		// await page.evaluate(() => document.querySelector("").remove());
+		var el = await page.$('body > div.pp-offcanvas-container > div.fl-page > div.fl-page-content > div.fl-builder-content.fl-builder-content-2731898.fl-builder-global-templates-locked > div.fl-row.fl-row-fixed-width.fl-row-bg-none.fl-node-5e00c30c6d3e3 > div > div.fl-row-content.fl-row-fixed-width.fl-node-content > div > div > div > div > div > div > div.trigo');
 		await el.screenshot({
 		    path: folder + '02 - soja.jpg',
 		    type: 'jpeg',
@@ -57,8 +57,8 @@ function gerarImagens(){
 
 		/// Café
 		await page.goto('https://www.canalrural.com.br/cotacao/cafe/', {waitUntil: 'networkidle2'});
-		await page.evaluate(() => document.getElementById("abas").remove());
-		var el = await page.$('.trigo');
+		// await page.evaluate(() => document.getElementById("abas").remove());
+		var el = await page.$('body > div.pp-offcanvas-container > div.fl-page > div.fl-page-content > div.fl-builder-content.fl-builder-content-2743787.fl-builder-global-templates-locked > div.fl-row.fl-row-fixed-width.fl-row-bg-none.fl-node-5e7d8e6f9bc02 > div > div.fl-row-content.fl-row-fixed-width.fl-node-content > div > div > div > div > div > div > div.trigo');
 		await el.screenshot({
 		    path: folder + '03 - cafe.jpg',
 		    type: 'jpeg',
@@ -68,8 +68,8 @@ function gerarImagens(){
 
 		/// Boi Gordo
 		await page.goto('https://www.canalrural.com.br/cotacao/boi-gordo/', {waitUntil: 'networkidle2'});
-		await page.evaluate(() => document.getElementById("abas").remove());
-		var el = await page.$('.boi-gordo');
+		// await page.evaluate(() => document.getElementById("abas").remove());
+		var el = await page.$('body > div.pp-offcanvas-container > div.fl-page > div.fl-page-content > div.fl-builder-content.fl-builder-content-2743787.fl-builder-global-templates-locked > div.fl-row.fl-row-fixed-width.fl-row-bg-none.fl-node-5e7d8e6f9bc02 > div > div.fl-row-content.fl-row-fixed-width.fl-node-content > div > div > div > div > div > div > div.boi-gordo');
 		await el.screenshot({
 		    path: folder + '04 - boigordo.jpg',
 		    type: 'jpeg',
